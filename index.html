@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <title>Big Black Theme</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="icon"  type="image/png" href="favicon.ico">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> 
+    <script src="scripts.js"></script>
+    <script>
+    if (screen.width <= 800) 
+    {
+        window.location = "mindex.html";
+    }
+    </script>
+  </head>
+  <body id="start" onload="navconrtol(0);">
+  <div id="fixbg">
+      <script>
+      var bg,a = Math.random()*24;
+      a=Math.floor(a);
+      
+      var div = document.getElementById("fixbg");
+      
+      var Wide = screen.width;
+      var Height = screen.height;
+      var scalerepro = 0;
+      
+      //div.style.width = Wide-8+"px";
+      div.style.height = Height+"px";
+     
+      if (Height <= 768)
+      {
+            scalerepro = 60; 
+            document.body.style.height = (Height-scalerepro)*2+"px";
+      } 
+      else
+      {
+            div.style.height = Height+100+"px";
+            document.body.style.height = (Height-scalerepro)*2+100+"px";
+      }
+                  
+      if(a==0) div.style.backgroundImage = "url('bgfix.jpg')";
+      if(a==1) div.style.backgroundImage = "url('bgfix2.jpg')";
+      if(a==2) div.style.backgroundImage = "url('bgfix3.jpg')";
+      if(a==3) div.style.backgroundImage = "url('bgfix4.jpg')";
+      if(a==4) div.style.backgroundImage = "url('bgfix5.jpg')";
+      if(a==5) div.style.backgroundImage = "url('bgfix6.jpg')";
+      if(a==6) div.style.backgroundImage = "url('bgfix7.jpg')";
+      if(a==7) div.style.backgroundImage = "url('bgfix8.jpg')";
+      if(a==8) div.style.backgroundImage = "url('bgfix9.jpg')";
+      if(a==9) div.style.backgroundImage = "url('bgfix10.jpg')";
+      if(a==10) div.style.backgroundImage = "url('bgfix11.jpg')";
+      if(a==11) div.style.backgroundImage = "url('bgfix12.jpg')";
+      if(a==12) div.style.backgroundImage = "url('bgfix13.jpg')";
+      if(a==13) div.style.backgroundImage = "url('bgfix14.jpg')";
+      if(a==14) div.style.backgroundImage = "url('bgfix15.jpg')";
+      if(a==15) div.style.backgroundImage = "url('bgfix16.jpg')";
+      if(a==16) div.style.backgroundImage = "url('bgfix17.jpg')";
+      if(a==17) div.style.backgroundImage = "url('bgfix18.jpg')";
+      if(a==18) div.style.backgroundImage = "url('bgfix19.jpg')";
+      if(a==19) div.style.backgroundImage = "url('bgfix20.jpg')";
+      if(a==20) div.style.backgroundImage = "url('bgfix21.jpg')";
+      if(a==21) div.style.backgroundImage = "url('bgfix22.jpg')";
+      if(a==22) div.style.backgroundImage = "url('bgfix23.jpg')";
+      if(a==23) div.style.backgroundImage = "url('bgfix24.jpg')";
+
+      </script>
+  </div>
+  <header><div id="logotype"><a href="index.html">Big Black Theme</a></div></header>
+  <nav>
+  <a href="#start" onclick="navconrtol(0);"><div class="abutton">Start</div></a>
+  <a href="#player" onclick="navconrtol(1);"><div class="abutton">Dalej</div></a>
+  <a href="#start" onclick="navconrtol(2);"><div class="abutton">Więcej</div></a>
+  </nav>
+  <div id="sentence">Big Black Theme jest szablonem stworzonym przez <a href="http://a.test10.besaba.com/">Vertigo Project</a>, bazującym na najnowszych rozwiązaniach i trendach w sieci oferujących nowoczesny wygląd strony.</div>
+  <div id="blocki">
+  <div class="infoblock">
+    E-mail: <a href="mailto:formoza@autistici.org">formoza@autistici.org</a><br />
+    Właściciel: Kamil Wiśniewski (<a href="http://a.test10.besaba.com/">A.Test10</a>)<br />
+    Cena: Do negocjacji</div>
+  <div class="infoblock" id="offer">
+  <ul>
+  <li>Przejrzytość strony</li>
+  <li>Intuicyjna nawigacja</li>
+  <li>Łatwość edycji kodu</li>
+  <li>Nowoczesny wygląd</li>
+  <li>Szybkość wczytywania</li>
+  <li>Zgodnośc wyświetlania na różnych platformach</li>
+  </ul>
+  </div>
+  </div>
+  <footer>© 2015 <a href="http://a.test10.besaba.com/">Vertigo Project</a>. All Rights Reserved</footer>
+  <article>
+  <div id="player">
+  <script>
+  var player = document.getElementById('player');
+  
+  var h = screen.height;
+  var w = screen.width;
+  
+  if (Height <= 768)
+  {
+        var ph = h-445;
+        var wh = w-550;
+  }
+  else
+  {
+        var ph = h-538;
+        var wh = w-850; 
+  }
+  
+  player.style.marginTop = "3%";
+  player.style.width = wh+"px";
+  player.style.height = ph+"px";
+  player.style.marginRight = "auto";
+  player.style.marginLeft = "auto";
+  
+  player.innerHTML = "<iframe width=\""+wh+"\" height=\""+ph+"\" src=\"https://www.youtube.com/embed/FyCHc1BJI6k?start=63\" frameborder=\"0\" allowfullscreen></iframe>";
+  </script>
+  </div>
+  </article>
+  <div id="bottom"></div>
+  </body>
+</html>
